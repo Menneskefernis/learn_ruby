@@ -67,6 +67,15 @@ describe "#translate" do
 
   # Test-driving bonus:
   # * write a test asserting that capitalized words are still capitalized (but with a different initial capital letter, of course)
+  it "capitalizes first letter of original word" do
+    s = translate("He went for a walk on Capitol Hill")
+    expect(s).to eq("Ehay entway orfay aay alkway onay Apitolcay Illhay")
+  end
+
   # * retain the punctuation from the original phrase
 
+  it "retains the puctuation from the original phrase" do
+    s = translate("My estate goes to my husband, son, daughter-in-law, and nephew")
+    expect(s).to eq("My estateay oesgay otay my usbandhay, onsay, aughter-in-lawday, anday ephewnay")
+  end
 end
