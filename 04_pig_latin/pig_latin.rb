@@ -46,5 +46,3 @@ def translate words
 end
 
 #translate("My estate goes to my husband, son, daughter-in-law, and nephew")
-
-
